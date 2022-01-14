@@ -1,66 +1,102 @@
 .body {
-    font-family: cursive;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(218, 218, 193);
 }
-
+/* each grid heading */
 .Navbarheading {
     color: black;
     font-size: large;
     font-weight: 600;
+    padding: 10px;
+    text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(to right, #00ff00 15%, #00ccff 75%);
 }
+/* navigation bar */
+nav {
+    display: flex;
+}
 
+p {
+    padding: 2px 2px 2px 2px;
+}
 
-.Navbar {
+nav > .Navbar {
     padding: 15px;
     color: black;
     font-size: x-large;
     font-weight: 600;
     position: sticky;
+    padding-right: 15rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(to right, #00ff00 15%, #00ccff 75%);
 }
 
+nav > img {
+    nav-right: root;
+    width: 400px;
+}
+/* first paragraph */
 .para1 {
-    display: grid;
-    grid-template-columns: 3 1;
+    padding-bottom: 2em;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-
 }
-
-
+/* second paragraph */
 .para2 {
-    display: grid;
-    grid-template-columns: 300px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-.para3 {
-    display: grid;
-    grid-template-columns: 300px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+ul, li {
+  list-style: decimal;
 }
-
-ul {
-    display: flex;
-    /* display: inline-flex; */
-  list-style: none;
+/* table contents */
+th, td {
+    padding: 15px; text-align: center;
 }
-
-.noticeBoard {
+.noticeBoard > table{
     border: 2px dotted #00ff00;
+    border-collapse: collapse;
+    width: 50%;
     border-radius: 0.2rem;
     padding: 2em;
-    text-align: justify;
-    /* border: solid #00ccff 1px; */
-    width: 50%;
     text-align: center;
 }
 
-.noticeBoard > td {
-    padding: 2px;
+caption {
+    font-weight: 600;
+    text-transform: uppercase;
+    text-shadow: #00ccff 0px 1px;
 }
 
-.foot {
+th {
+    background: #00ff00;
+}
+
+.noticeBoard > table, th, td {
+    border: 2px dotted #00ff00;
+    border-collapse: collapse;
+}
+/* footer */
+#foot {
+    border-top: solid #00ff00 5px;
+    background: black;
+    padding: 15px;
+    color: antiquewhite;
+}
+/* content block */
+.Contents {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+
+    font-size: 3vh;
+}
+
+/* table content block */
+.tableContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
 }
