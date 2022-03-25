@@ -1,0 +1,4 @@
+Illustrate the usage of abstract class with following Java classes –
+i)An abstract class student (package name- pack1)with data member
+                roll no, reg no and a abstract method course().
+ii)A subclass kiitian (package name- pack2) with course() method implementation.
