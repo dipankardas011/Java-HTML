@@ -15,7 +15,7 @@ class Account {
   public void deposit(int x) {
     System.out.println("(+)"+x);
     if (deposit + x <= MINACC) {
-      System.out.println("^~~ Current Amount is too less Deposit more amount");
+      System.out.println("^~~ Current Amount is too less, Deposit more amount");
       return;
     }
 
