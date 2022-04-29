@@ -5,12 +5,14 @@
 /* each grid heading */
 .Navbarheading {
     color: black;
-    font-size: large;
+    font-size: x-large;
     font-weight: 600;
     padding: 10px;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(to right, #00ff00 15%, #00ccff 75%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 /* navigation bar */
 nav {
@@ -30,6 +32,8 @@ nav > .Navbar {
     padding-right: 15rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(to right, #00ff00 15%, #00ccff 75%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 nav > img {
